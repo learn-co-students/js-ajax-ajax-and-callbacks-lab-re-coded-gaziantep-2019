@@ -20,7 +20,14 @@
   </head>
   <body>
     <main id="main">
-      <div id="errors"></div>
+      <div id="errors">
+         <div>
+        <h2><a href="${result.html_url}">${result.name}</a></h2>
+        <p><a href="#" data-repository="${result.name}" data-owner="${result.owner.login}" onclick="showCommits(this)">Show Commits</a></p>
+        <p>${result.description}</p>
+      </div>
+      <hr>
+      </div>
     </main>
     <div class="flexbox-container">
       <div>
